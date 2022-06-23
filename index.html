@@ -15,6 +15,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuu Motel 2022</title>
   <link rel="stylesheet" href="./sass/styles.scss" />
+
+  <meta property="og:title" content="Nuu.Motel" />
+<meta property="og:description" content="Conheça um novo conceito de motel" />
+<meta property="og:image" content="https://github.com/ga-fleury/nuumotel/blob/master/img/3d3.png?raw=true" />
 </head>
 
 <body class="loading">
@@ -59,7 +63,7 @@
     </header>
     <!-- Header Finish-->
     <div class="content-wrap">
-      <section class="hero first">
+      <section class="hero first" id="fotobg">
         <div class="container">
           <div class="hero-inner">
             <div class="hero-inner-banner">
@@ -252,6 +256,19 @@
       </div>
     </div>
   </div>
+  <!-- <script>
+    function randomImg() {
+        let number = Math.floor(Math.random() * 2);
+        let foto = document.getElementById("fotobg")
+
+        console.log(number);
+
+        foto.style.backgroundImage = `"url(/img/espuma${number}.jpg)"`
+        console.log(`"url(/img/espuma${number}.jpg)"`)
+    }
+
+    randomImg();
+</script> -->
 </body>
 <script src="js/index.js"></script>
 <script src="js/scroll.js"></script>
