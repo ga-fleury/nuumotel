@@ -1,0 +1,204 @@
+@import 'rules';
+
+.cta-button {
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 0 25px 0 0;
+  box-sizing: content-box;
+  width: 200px;
+  text-align: center;
+  padding: 15px 30px;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-weight: bold;
+
+  &:hover {
+    background-color: white;
+    color: $nuublue;
+    cursor: pointer;
+  }
+}
+
+.screenshot {
+    background-color: #fff;
+    &-container {
+        overflow: hidden;
+        height: 100vh;
+
+        &-padded {
+        @media (min-width: 360px) {
+          padding: $sp-xs
+        }
+        @media (min-width: 768px) {
+          padding: $sp-s
+        }
+        @media (min-width: 1024px) {
+          padding: $sp-m
+        }
+        @media (min-width: 1200px) {
+          padding: $sp-l
+        }
+        @media (min-width: 1350px) {
+          padding: $sp-xl
+        }
+        @media (min-width: 1600px) {
+          padding: $sp-2xl
+        }
+        @media (min-width: 1800px) {
+          padding: $sp-3xl
+        }
+        }
+
+    }
+    &-content {
+      object-fit: cover;
+      object-position: bottom;
+      transform: scale(1);
+      max-width: none;
+      width: 100%;
+      height: 100vh;
+
+      @media (max-width: 1024px) {
+
+      }
+    }
+}
+
+.service {
+    background: #fe7365;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
+  
+    &-callout {
+      font-size: 1.2em;
+      overflow: hidden;
+
+      &-span {
+        display: block;
+        animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+  
+    &-title{
+      font-size: 6em;
+      font-weight: 400;
+      line-height: 1em;
+      margin-top: 0.3em;
+      line-height: 1;
+
+      &-span {
+        display: block;
+        animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+    &-container {
+      @media (min-width: 360px) {
+        padding: $p-xs
+      }
+      @media (min-width: 768px) {
+        padding: $p-s
+      }
+      @media (min-width: 1024px) {
+        padding: $p-m
+      }
+      @media (min-width: 1200px) {
+        padding: $p-l
+      }
+      @media (min-width: 1350px) {
+        padding: $p-xl
+      }
+      @media (min-width: 1600px) {
+        padding: $p-2xl
+      }
+      @media (min-width: 1800px) {
+        padding: $p-3xl
+      }
+  
+      .service-inner {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+  
+        .service-inner-col {
+          &.left {
+            display: none;
+          }
+          .service-inner-title {
+            z-index: 11;
+            position: relative;
+            h1 {
+              margin: 0;
+  
+              font-weight: 400;
+              @media (min-width: 1800px) {
+                font-size: 28px;
+              }
+            }
+          }
+          .service-inner-links {
+            z-index: 11;
+            position: relative;
+            display: flex;
+            .service-inner-link-item {
+              .service-inner-link-item-padding {
+                position: relative;
+                &:before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  top: -30vh;
+                  bottom: -30vh;
+                  left: 0;
+                  right: 0;
+                }
+              }
+              a {
+                padding: 12px 22px;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                color: transparent;
+                transition: color 0.3s, -webkit-text-stroke 0.3s;
+                -webkit-text-stroke: 1px #000;
+                &:hover {
+                  color: black;
+                  -webkit-text-stroke: 1px transparent;
+                }
+                span {
+                  line-height: 1.1;
+                  font-weight: 700;
+                  text-shadow: none;
+                  font-size: 5.8vw;
+                }
+              }
+              &:first-child {
+                a {
+                  padding-left: 0;
+                }
+              }
+              &:last-child {
+                a {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .service-inner-footer {
+        padding-bottom: 80px;
+        .service-inner-footer-text {
+          p {
+            font-size: 2.8rem;
+            margin-top: -90px;
+            width: 70%;
+            line-height: 4.4rem;
+          }
+        }
+      }
+    }
+  }

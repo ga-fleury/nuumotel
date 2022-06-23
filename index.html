@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  TODO:
+  - [ ] make menu
+  - [ ] make the website video
+  - [ ] footer links
+  - [ ] add content to page
+-->
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuu Motel 2022</title>
+  <link rel="stylesheet" href="./sass/styles.scss" />
+</head>
+
+<body class="loading">
+  <div id="body-overlay"></div>
+    <!-- Menu Start-->
+    <nav class="real-menu" role="navigation">
+      <div style="font-size: 40px;margin-left:auto;cursor:pointer;" id="close-menu"><span>x</span></div>
+      <div class="nav-menu">
+          <a href=""> Home </a>
+          <a href=""> Experiência </a>
+          <a href=""> O motel </a>
+          <a href=""> Suítes </a>
+          <a href=""> Fale Conosco </a>
+          <a href="./pages/nuukit.html"> Monte Seu Kit </a>
+      </div>
+  </nav>
+  <!-- Menu Close-->
+  <div data-scroll-container id="data-scroll">
+    <!-- Header -->
+    <header>
+      <div class="header-inner">
+        <div class="header-inner-col left">
+          <div class="header-inner-logo">
+            <a href="/" style="color:black">
+              <img class="logo-img" src="/img/logo-01.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="header-inner-col right">
+          <div class="header-inner-nav">
+            <div class="header-inner-nav-menu" id="open-menu">
+              <span class="header-inner-nav-link">menuu</span>
+              <div class="header-inner-nav-menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Finish-->
+    <div class="content-wrap">
+      <section class="hero first">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-inner-banner">
+              <div class="hero-inner-col left"></div>
+              <div class="hero-inner-col right">
+                <div class="hero-inner-title">
+                  <h1>Um novo conceito de motel</h1>
+                </div>
+                <div class="hero-inner-links">
+                  <div data-video-src="websites" class="hero-inner-link-item">
+                    <div class="hero-inner-link-item-padding"></div>
+                    <a href="/pages/experiencia.html"> <span>Experiência</span></a>
+                  </div>
+                  <div data-video-src="apps" class="hero-inner-link-item">
+                    <div class="hero-inner-link-item-padding"></div>
+                    <a href="/pages/nuukit.html"> <span style="white-space: nowrap;">O motel</span></a>
+                  </div>
+                  <div class="hero-inner-link-item" data-video-src="branding">
+                    <div class="hero-inner-link-item-padding"></div>
+                    <a href="/pages/nuubox.html"> <span>Suítes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-inner-footer">
+            <!-- <div class="hero-inner-footer-text">
+              <p>
+                Olá 👋 nós somos o Nuu.motel,
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt eligendi in architecto
+                nulla suscipit ipsam cumque, doloribus sint quod.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <!-- <section class="hero" style="padding-bottom: 200px;">
+        <div class="container">
+          <h1>projetos</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit quos sint magni, eveniet
+            culpa! Nulla error eum, ullam eaque modi iste aspernatur impedit voluptas expedita dolorem pariatur optio
+            exercitationem aliquam fuga nostrum suscipit quisquam delectus beatae cum officiis ex. Provident
+            exercitationem
+            sapiente dignissimos atque laborum sit libero et. Provident, deserunt dolores necessitatibus perspiciatis
+            cumque
+            magnam maiores dolor veritatis porro dicta? Id odit aliquid voluptas quaerat voluptates corrupti sunt autem
+            vel
+            accusamus tempora nulla nesciunt repellat cumque accusantium, officia assumenda consequuntur, velit eaque
+            sit,
+            excepturi iste temporibus reprehenderit nostrum earum! Magni, voluptate unde? Labore expedita, sit
+            consequatur
+            minus iste alias quod pariatur, saepe magni, fugit aliquam corporis. Facere culpa accusamus fuga
+            repellendus.
+            Ut
+            quod, deleniti, nihil facilis illum odit sint ab, dicta ipsum optio fugit veritatis sed sequi. Aliquid a
+            ipsam,
+            esse doloribus architecto saepe sequi dolores vitae. Facilis ullam autem non voluptatem perspiciatis,
+            reiciendis
+            asperiores architecto laborum at deleniti nam, nesciunt explicabo? Provident magni quidem distinctio maxime
+            accusantium eveniet sapiente nobis ipsum repellat culpa? Animi, harum? Reiciendis, cumque. Dicta dolorum,
+            laudantium distinctio velit quae id, omnis laborum fuga eos iste labore expedita exercitationem natus!
+            Tenetur
+            explicabo quod qui nemo accusantium magni illo dolores minus. Similique numquam itaque a illo.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit quos sint magni, eveniet
+            culpa! Nulla error eum, ullam eaque modi iste aspernatur impedit voluptas expedita dolorem pariatur optio
+            exercitationem aliquam fuga nostrum suscipit quisquam delectus beatae cum officiis ex. Provident
+            exercitationem
+            sapiente dignissimos atque laborum sit libero et. Provident, deserunt dolores necessitatibus perspiciatis
+            cumque
+            magnam maiores dolor veritatis porro dicta? Id odit aliquid voluptas quaerat voluptates corrupti sunt autem
+            vel
+            accusamus tempora nulla nesciunt repellat cumque accusantium, officia assumenda consequuntur, velit eaque
+            sit,
+            excepturi iste temporibus reprehenderit nostrum earum! Magni, voluptate unde? Labore expedita, sit
+            consequatur
+            minus iste alias quod pariatur, saepe magni, fugit aliquam corporis. Facere culpa accusamus fuga
+            repellendus.
+            Ut
+            quod, deleniti, nihil facilis illum odit sint ab, dicta ipsum optio fugit veritatis sed sequi. Aliquid a
+            ipsam,
+            esse doloribus architecto saepe sequi dolores vitae. Facilis ullam autem non voluptatem perspiciatis,
+            reiciendis
+            asperiores architecto laborum at deleniti nam, nesciunt explicabo? Provident magni quidem distinctio maxime
+            accusantium eveniet sapiente nobis ipsum repellat culpa? Animi, harum? Reiciendis, cumque. Dicta dolorum,
+            laudantium distinctio velit quae id, omnis laborum fuga eos iste labore expedita exercitationem natus!
+            Tenetur
+            explicabo quod qui nemo accusantium magni illo dolores minus. Similique numquam itaque a illo.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit quos sint magni, eveniet
+            culpa! Nulla error eum, ullam eaque modi iste aspernatur impedit voluptas expedita dolorem pariatur optio
+            exercitationem aliquam fuga nostrum suscipit quisquam delectus beatae cum officiis ex. Provident
+            exercitationem
+            sapiente dignissimos atque laborum sit libero et. Provident, deserunt dolores necessitatibus perspiciatis
+            cumque
+            magnam maiores dolor veritatis porro dicta? Id odit aliquid voluptas quaerat voluptates corrupti sunt autem
+            vel
+            accusamus tempora nulla nesciunt repellat cumque accusantium, officia assumenda consequuntur, velit eaque
+            sit,
+            excepturi iste temporibus reprehenderit nostrum earum! Magni, voluptate unde? Labore expedita, sit
+            consequatur
+            minus iste alias quod pariatur, saepe magni, fugit aliquam corporis. Facere culpa accusamus fuga
+            repellendus.
+            Ut
+            quod, deleniti, nihil facilis illum odit sint ab, dicta ipsum optio fugit veritatis sed sequi. Aliquid a
+            ipsam,
+            esse doloribus architecto saepe sequi dolores vitae. Facilis ullam autem non voluptatem perspiciatis,
+            reiciendis
+            asperiores architecto laborum at deleniti nam, nesciunt explicabo? Provident magni quidem distinctio maxime
+            accusantium eveniet sapiente nobis ipsum repellat culpa? Animi, harum? Reiciendis, cumque. Dicta dolorum,
+            laudantium distinctio velit quae id, omnis laborum fuga eos iste labore expedita exercitationem natus!
+            Tenetur
+            explicabo quod qui nemo accusantium magni illo dolores minus. Similique numquam itaque a illo.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur reprehenderit quos sint magni, eveniet
+            culpa! Nulla error eum, ullam eaque modi iste aspernatur impedit voluptas expedita dolorem pariatur optio
+            exercitationem aliquam fuga nostrum suscipit quisquam delectus beatae cum officiis ex. Provident
+            exercitationem
+            sapiente dignissimos atque laborum sit libero et. Provident, deserunt dolores necessitatibus perspiciatis
+            cumque
+            magnam maiores dolor veritatis porro dicta? Id odit aliquid voluptas quaerat voluptates corrupti sunt autem
+            vel
+            accusamus tempora nulla nesciunt repellat cumque accusantium, officia assumenda consequuntur, velit eaque
+            sit,
+            excepturi iste temporibus reprehenderit nostrum earum! Magni, voluptate unde? Labore expedita, sit
+            consequatur
+            minus iste alias quod pariatur, saepe magni, fugit aliquam corporis. Facere culpa accusamus fuga
+            repellendus.
+            Ut
+            quod, deleniti, nihil facilis illum odit sint ab, dicta ipsum optio fugit veritatis sed sequi. Aliquid a
+            ipsam,
+            esse doloribus architecto saepe sequi dolores vitae. Facilis ullam autem non voluptatem perspiciatis,
+            reiciendis
+            asperiores architecto laborum at deleniti nam, nesciunt explicabo? Provident magni quidem distinctio maxime
+            accusantium eveniet sapiente nobis ipsum repellat culpa? Animi, harum? Reiciendis, cumque. Dicta dolorum,
+            laudantium distinctio velit quae id, omnis laborum fuga eos iste labore expedita exercitationem natus!
+            Tenetur
+            explicabo quod qui nemo accusantium magni illo dolores minus. Similique numquam itaque a illo.</p>
+        </div>
+      </section> -->
+    </div>
+    <footer class="footer" data-scroll-sticky>
+      <section class="outro-wrap">
+        <div class="outro-content" data-cursor="-inverse" style="transform: translate(0px, 0%); will-change: auto;">
+          <div class="outro-body">
+            <div class="outro-container">
+              <div class="outro-header">
+                <h2>Ficou curioso? <br> <a class="sliding-middle-out" href="/contacts/">Fale conosco</a></h2>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="outro-grid-col -left">
+            </div> -->
+          <div class="outro-grid-address">
+            <div class="outro-address">
+              <address>
+                <p>Rua João Moura 1182</p>
+                <p>São Paulo, SP 05412-002, BR</p>
+              </address>
+              <div>
+                <div class="outro-mail"><a
+                    href="mailto:contato@gabrielfleury.design"><em><span>contato@gabrielfleury.design</span></em></a>
+                </div>
+                <div class="outro-link"><a class="outro-link-item" href="/privacy/">Política de Privacidade</a></div>
+              </div>
+            </div>
+            <div class="outro-social">
+              <div class="outro-social-row">
+                </a><a class="outro-social-item -patreon" href="//twitter.com/cuberto" target="_blank" rel="noopener"
+                  aria-label="Twitter"><span class="outro-social-item-title"><span
+                      data-text="Twitter">Feito com 🍆 por Gabriel Fleury</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Chat -->
+    <div class="chat">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30" id="chat">
+        <path
+          d="M16 26c8.84 0 16-5.82 16-13S24.84 0 16 0 0 5.82 0 13a11.72 11.72 0 004.12 8.71L3.33 30l7.53-4.69A19.11 19.11 0 0016 26z">
+        </path>
+      </svg>
+    </div>
+    <!-- Cursor -->
+    <div class="cursor media-blend" id="cursor">
+      <div class="cursor-media">
+        <video src="./videos/websites.mp4" preload="auto" autoplay muted loop id="websites"></video>
+        <video src="./videos/individuais/lexapp.mp4" preload="auto" autoplay muted loop id="apps"></video>
+        <video src="./videos/branding portfolio2022-2.mp4" preload="auto" autoplay muted loop id="branding"></video>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/menu.js"></script>
+<!-- <script type="text/javascript">
+  if (screen.width <= 699) {
+    document.location = "./mobile.html";
+  }
+</script> -->
+
+</html>

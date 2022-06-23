@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    TODO:
+    - [x] fix chat bubble floating
+    - [ ] add content to page
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Experiência</title>
+    <link rel="stylesheet" href="../sass/styles.scss" />
+    <link rel="stylesheet" href="../sass/components/service.scss" />
+</head>
+
+<body class="loading">
+    <div id="body-overlay"></div>
+    <!-- Menu Start-->
+    <nav class="real-menu azul" role="navigation">
+        <div style="font-size: 40px;margin-left:auto;cursor:pointer;" id="close-menu"><span>x</span></div>
+        <div class="nav-menu">
+            <a href=""> Home </a>
+            <a href=""> Experiência </a>
+            <a href=""> O motel </a>
+            <a href=""> Suítes </a>
+            <a href=""> Fale Conosco </a>
+            <a href="./nuukit.html"> Monte Seu Kit </a>
+        </div>
+    </nav>
+    <!-- Menu Close-->
+    <div data-scroll-container id="data-scroll">
+        <!-- Header -->
+        <header>
+          <div class="header-inner">
+            <div class="header-inner-col left">
+              <div class="header-inner-logo">
+                <a href="/" style="color:black">
+                  <img class="logo-img" src="/img/logo-01.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="header-inner-col right">
+              <div class="header-inner-nav">
+                <div class="header-inner-nav-menu" id="open-menu">
+                  <span class="header-inner-nav-link">menuu</span>
+                  <div class="header-inner-nav-menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Header Finish-->
+        <div id="scroll-container">
+            <div class="service-wrap">
+                <section class="service">
+                    <div class="service-container">
+                        <div class="hero-inner">
+                            <div class="hero-inner-footer">
+                                <div class="hero-inner-footer-text">
+                                    <p class="service-callout"><span class="service-callout-span">Algo escrito aqui
+                                    </p></span>
+                                    <h1 class="service-title">
+                                        <span class="service-title-span">Algo maior aqui</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="screenshot">
+                    <div class="screenshot-container">
+                        <img src="../img/serviços/branding/treat_18.jpg" alt="" class="screenshot-content" data-scroll
+                            data-scroll-speed="-3">
+                    </div>
+                </section>
+                <section class="hero" style="height: 100vh;">
+                    <div class="container quote">
+                        <h1 class="hero-service-quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                            nostrum tempora eaque ipsa deleniti debitis.</h1>
+
+                        <button class="cta-button">Quero entrar em contato</button>
+                    </div>
+                </section>
+                <section class="screenshot" data-scroll-container>
+                    <div class="screenshot-container">
+                        <img src="../img/serviços/branding/treat_26.jpg" alt="" class="screenshot-content" data-scroll
+                            data-scroll-speed="-3">
+                    </div>
+                </section>
+                <section class="hero" style="height: 100vh;">
+                    <div class="container quote verde">
+                        <h1 class="hero-service-quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                            nostrum tempora eaque ipsa deleniti debitis.</h1>
+
+                        <button class="cta-button">Quero entrar em contato</button>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <section class="outro-wrap">
+                    <div class="outro-content" data-cursor="-inverse"
+                        style="transform: translate(0px, 0%); will-change: auto;">
+                        <div class="outro-body">
+                            <div class="outro-container">
+                                <div class="outro-header">
+                                    <h2>Tem uma ideia? <br> <a class="sliding-middle-out" href="/contacts/">Fale
+                                            comigo</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="outro-grid-col -left">
+                </div> -->
+                        <div class="outro-grid-address">
+                            <div class="outro-address">
+                                <address>
+                                    <p>Rua João Moura 1182</p>
+                                    <p>São Paulo, SP 05412-002, BR</p>
+                                </address>
+                                <div>
+                                    <div class="outro-mail"><a
+                                            href="mailto:contato@gabrielfleury.design"><em><span>contato@gabrielfleury.design</span></em></a>
+                                    </div>
+                                    <div class="outro-link"><a class="outro-link-item" href="/privacy/">Política de
+                                            Privacidade</a></div>
+                                </div>
+                            </div>
+                            <div class="outro-social">
+                                </a><a class="outro-social-item -patreon" href="//twitter.com/cuberto" target="_blank"
+                                    rel="noopener" aria-label="Twitter"><span class="outro-social-item-title"><span
+                                            data-text="Twitter">Twitter</span></span>
+                                </a><a class="outro-social-item -behance" href="//www.behance.net/cuberto"
+                                    target="_blank" rel="noopener" aria-label="Behance"><span
+                                        class="outro-social-item-title"><span data-text="Behance">Behance</span></span>
+                                </a>
+                                <a class="outro-social-item -dribble" href="//dribbble.com/cuberto" target="_blank"
+                                    rel="noopener" aria-label="Dribbble"><span class="outro-social-item-title"><span
+                                            data-text="Dribbble">Dribbble</span>
+                                </a><a class="outro-social-item -instagram" href="//www.instagram.com/cubertodesign/"
+                                    target="_blank" rel="noopener" aria-label="Instagram"><span
+                                        class="outro-social-item-title"><span
+                                            data-text="Instagram">Instagram</span></span>
+                                </a><a class="outro-social-item -youtube"
+                                    href="//www.youtube.com/channel/UCzestFrXpwSGCfcbO2pObwQ" target="_blank"
+                                    rel="noopener" aria-label="YouTube"><span class="outro-social-item-title"><span
+                                            data-text="YouTube">YouTube</span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer" data-scroll-sticky>
+                    <section class="outro-wrap roxo">
+                        <div class="outro-content" data-cursor="-inverse"
+                            style="transform: translate(0px, 0%); will-change: auto;">
+                            <div class="outro-body">
+                                <div class="outro-container">
+                                    <div class="outro-header">
+                                        <h2>Ficou curioso? <br> <a class="sliding-middle-out" href="/contacts/">Fale
+                                                conosco</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="outro-grid-col -left">
+                        </div> -->
+                            <div class="outro-grid-address">
+                                <div class="outro-address">
+                                    <address>
+                                        <p>Rua João Moura 1182</p>
+                                        <p>São Paulo, SP 05412-002, BR</p>
+                                    </address>
+                                    <div>
+                                        <div class="outro-mail"><a
+                                                href="mailto:contato@gabrielfleury.design"><em><span>contato@gabrielfleury.design</span></em></a>
+                                        </div>
+                                        <div class="outro-link"><a class="outro-link-item" href="/privacy/">Política de
+                                                Privacidade</a></div>
+                                    </div>
+                                </div>
+                                <div class="outro-social">
+                                    <div class="outro-social-row">
+                                        </a><a class="outro-social-item -patreon" href="//twitter.com/cuberto"
+                                            target="_blank" rel="noopener" aria-label="Twitter"><span
+                                                class="outro-social-item-title"><span
+                                                    data-text="Twitter">Twitter</span></span>
+                                        </a><a class="outro-social-item -behance" href="//www.behance.net/cuberto"
+                                            target="_blank" rel="noopener" aria-label="Behance"><span
+                                                class="outro-social-item-title"><span
+                                                    data-text="Behance">Behance</span></span>
+                                        </a></div>
+                                    <a class="outro-social-item -dribble" href="//dribbble.com/cuberto" target="_blank"
+                                        rel="noopener" aria-label="Dribbble"><span class="outro-social-item-title"><span
+                                                data-text="Dribbble">Dribbble</span>
+                                    </a><a class="outro-social-item -instagram"
+                                        href="//www.instagram.com/cubertodesign/" target="_blank" rel="noopener"
+                                        aria-label="Instagram"><span class="outro-social-item-title"><span
+                                                data-text="Instagram">Instagram</span></span>
+                                    </a><a class="outro-social-item -youtube"
+                                        href="//www.youtube.com/channel/UCzestFrXpwSGCfcbO2pObwQ" target="_blank"
+                                        rel="noopener" aria-label="YouTube"><span class="outro-social-item-title"><span
+                                                data-text="YouTube">YouTube</span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </footer>
+        </div>
+        <!-- Cursor -->
+        <div class="cursor">
+            <div class="cursor-media">
+            </div>
+        </div>
+        <!-- Chat -->
+        <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30" id="roxo" class="roxo">
+                <path
+                    d="M16 26c8.84 0 16-5.82 16-13S24.84 0 16 0 0 5.82 0 13a11.72 11.72 0 004.12 8.71L3.33 30l7.53-4.69A19.11 19.11 0 0016 26z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/menu.js"></script>
+<!-- <script src="../js/text.js"></script> -->
+
+</html>

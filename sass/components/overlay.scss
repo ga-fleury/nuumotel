@@ -1,0 +1,94 @@
+#body-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    opacity: 1;
+    animation: BGblurRev ease-in-out .5s forwards;
+    backdrop-filter: blur(20px);
+}
+
+
+// Menu 
+
+.real-menu {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    z-index: 4;
+    width: 30%;
+    height: 100%;
+    padding: .5rem 1rem;
+    box-shadow: 0 -6px -12px rgba(107, 82, 82, 0.3);
+    background-color: $nuuorange;
+    backdrop-filter: blur(20px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vw;
+
+    &.azul {
+        background-color: $nuublue;
+    }
+
+    &.roxo {
+        background-color: $nuupurple;
+    }
+
+    &.verde {
+        background-color: $nuugreen;
+    }
+
+    & a {
+        font-size: 2vw;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+
+    &.menu-open{
+        #body-overlay {
+            display: block;
+            animation: BGblur ease-in-out .5s forwards;
+        }
+    }
+
+    &.menu-open {
+        .real-menu {
+           right: 0;
+        }
+    }
+}
+
+@keyframes BGblur {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(5px);
+    }
+}
+@keyframes BGblurRev {
+    0% {
+        backdrop-filter: blur(5px);
+    }
+    100% {
+        backdrop-filter: blur(0px);
+    }
+}
