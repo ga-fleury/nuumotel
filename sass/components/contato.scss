@@ -1,0 +1,65 @@
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(192, 192, 192);
+    opacity: 1; /* Firefox */
+  }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    color: black;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.container.quote.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.doubleleft {
+    width: 30%;
+}
+
+.doubleright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contatoh1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+

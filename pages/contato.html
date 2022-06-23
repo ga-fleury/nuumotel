@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  TODO:
+  - [ ] make menu
+  - [ ] make the website video
+  - [ ] footer links
+  - [ ] add content to page
+-->
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuu Motel 2022</title>
+    <link rel="stylesheet" href="../sass/styles.scss" />
+    <link rel="stylesheet" href="../sass/components/service.scss" />
+    <link rel="stylesheet" href="../sass/components/contato.scss" />
+</head>
+
+<body class="loading">
+    <div id="body-overlay"></div>
+    <!-- Menu Start-->
+    <nav class="real-menu" role="navigation">
+        <div style="font-size: 40px;margin-left:auto;cursor:pointer;" id="close-menu"><span>x</span></div>
+        <div class="nav-menu">
+            <a href=""> Home </a>
+            <a href=""> Experiência </a>
+            <a href=""> O motel </a>
+            <a href=""> Suítes </a>
+            <a href=""> Fale Conosco </a>
+            <a href="./nuukit.html"> Monte Seu Kit </a>
+        </div>
+    </nav>
+    <!-- Menu Close-->
+    <div data-scroll-container id="data-scroll">
+        <!-- Header -->
+        <header>
+            <div class="header-inner">
+                <div class="header-inner-col left">
+                    <div class="header-inner-logo">
+                        <a href="/" style="color:black">
+                            <img class="logo-img" src="../img/logo-01.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-inner-col right">
+                    <div class="header-inner-nav">
+                        <div class="header-inner-nav-menu" id="open-menu">
+                            <span class="header-inner-nav-link">menuu</span>
+                            <div class="header-inner-nav-menu-hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header Finish-->
+        <div class="content-wrap">
+            <!-- <section class="hero first">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-inner-banner">
+                            <div class="hero-inner-col left"></div>
+                            <div class="hero-inner-col right">
+                                <div class="hero-inner-title">
+                                    <h1>Um novo conceito de motel</h1>
+                                </div>
+                                <div class="hero-inner-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section> -->
+            <section class="hero" style="height: 100vh;">
+                <div class="container double">
+                    <div class="doubleleft">
+                        <h1 class="contatoh1">Entre em contato!</h1>
+                        <form id="contact" action="" method="post">
+                            <fieldset>
+                                <label for="">Nome</label>
+                                <input placeholder="" type="text" tabindex="1" required autofocus>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">E-mail</label>
+                                <input placeholder="seu@email.com.br" type="email" tabindex="2" required>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">Zap (opcional)</label>
+                                <input placeholder="11 988 888 888" type="tel" tabindex="3" required>
+                            </fieldset>
+                            <fieldset>
+                                <label for="">A sua mensagem</label>
+                                <textarea placeholder="Fala pra gente " tabindex="5" required></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <button class="cta-button">Enviar</button>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="doubleright">
+                        <img src="../img/map.png" alt="">
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <footer class="footer" data-scroll-sticky>
+            <section class="outro-wrap">
+                <div class="outro-content" data-cursor="-inverse"
+                    style="transform: translate(0px, 0%); will-change: auto;">
+                    <div class="outro-body">
+                        <div class="outro-container">
+                            <div class="outro-header">
+                                <h2>Clique aqui <br> <a class="sliding-middle-out" href="/contacts/">e reserve</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </footer>
+        <!-- Chat -->
+        <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 30" id="chat">
+                <path
+                    d="M16 26c8.84 0 16-5.82 16-13S24.84 0 16 0 0 5.82 0 13a11.72 11.72 0 004.12 8.71L3.33 30l7.53-4.69A19.11 19.11 0 0016 26z">
+                </path>
+            </svg>
+        </div>
+        <!-- Cursor -->
+        <div class="cursor media-blend" id="cursor">
+            <div class="cursor-media">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/menu.js"></script>
+<!-- <script type="text/javascript">
+  if (screen.width <= 699) {
+    document.location = "./mobile.html";
+  }
+</script> -->
+
+</html>
