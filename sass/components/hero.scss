@@ -9,6 +9,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     gap: 32px 16px;
+
+    @media (max-width: 1400px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
@@ -18,13 +25,8 @@
         overflow: hidden;
         transition: all 0.2s ease-in-out;
         margin: 0 auto;
-        min-width: 300px;
         height: 450px;
         border: 5px solid white;
-
-        @media (max-width: 1024px) {
-            max-width: 350px;
-        }
     }
 
     &__front {
@@ -48,6 +50,9 @@
         max-height: 100%;
         object-fit: cover;
         transition: all 0.2s ease-in-out;
+        @media (max-width: 675px) {
+            max-height: 50%;
+        }
     }
 
     &__link {
@@ -165,8 +170,8 @@
         @media (min-width: 768px) {
             padding: $p-s;
         }
-        @media (min-width: 1024px) {
-            padding: $p-m;
+        @media (max-width: 1024px) {
+            padding: 0 30px;
         }
         @media (min-width: 1200px) {
             padding: $p-l;
@@ -187,6 +192,12 @@
                 font-weight: 400;
                 margin: 0 0 50px 0;
                 padding: 0 0px;
+                @media (max-width: 1024px) {
+                    font-size: 3em;
+                }
+                @media (max-width: 675px) {
+                    font-size: 2em;
+                }
             }
             @media (max-width: 1200px) {
                 padding: 0 0px;

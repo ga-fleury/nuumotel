@@ -51,6 +51,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 675px) {
+    visibility: hidden;
+  }
+
   svg {
     fill: #30cce5;
     width: 28px;

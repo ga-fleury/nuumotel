@@ -4,6 +4,10 @@ header {
   left: 60px;
   right: 60px;
   z-index: 30;
+
+  @media (max-width: 1024px) {
+    left: 30px;
+}
   .header-inner {
     display: flex;
     align-items: center;
