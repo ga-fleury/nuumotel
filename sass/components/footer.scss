@@ -141,6 +141,17 @@ footer h2 {
     }
 }
 
+.outro-header {
+    & h2 {
+        font-weight: 300;
+
+        & a {
+            font-weight: 400 !important;
+        }
+    }
+    
+}
+
 .sliding-middle-out {
     display: inline-block;
     position: relative;

@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+.logo-img.main {
+    width: 300px;
+}
+
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .grid.four {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -51,7 +62,7 @@
         object-fit: cover;
         transition: all 0.2s ease-in-out;
         @media (max-width: 675px) {
-            max-height: 50%;
+            max-height: 80%;
         }
     }
 
@@ -118,6 +129,12 @@
         font-size: 0.8em;
         line-height: 1.2;
         color: rgb(134, 134, 134);
+    }
+
+    &__name {
+        @media (max-width: 675px) {
+            opacity: 0;
+        }
     }
 }
 
@@ -259,6 +276,10 @@
             box-sizing: border-box;
         }
 
+        &.blur {
+            backdrop-filter: blur(10px);
+        }
+
         .hero-inner {
             height: 100vh;
             display: flex;
@@ -335,6 +356,14 @@
                 }
             }
         }
+
+        .hero-inner.construction {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .hero-inner-footer {
             padding-bottom: 80px;
             .hero-inner-footer-text {

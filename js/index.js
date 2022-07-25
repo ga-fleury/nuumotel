@@ -25,7 +25,7 @@ for(let i = 0; i < suiteCard.length; i++) {
 	suiteCard[i].addEventListener("mouseenter", function( event ) {
 		// highlight the mouseenter target
 		console.log(`hovering card[${i}]`);
-		suiteImage[i].style.maxHeight = "50%";
+		suiteImage[i].style.maxHeight = "80%";
 		suiteImage[i].style.width = "100%";
 		suiteText[i].style.opacity = "0";
 		suiteText[i].style.visibility = "hidden";
