@@ -152,6 +152,11 @@
     background-size: cover;
     background-position: center;
 }
+.hero.second {
+    background-image: url(/img/festa.jpg);
+    background-size: cover;
+    background-position: right top;
+}
 
 .hero {
     background-color: $nuublue;
@@ -159,6 +164,10 @@
 
     &.green {
         background-color: $nuugreen;
+    }
+
+    &.laranja {
+        background-color: $nuuorange;
     }
 
     &-service-callout {
@@ -263,6 +272,13 @@
             }
             &.verde {
                 background-color: $nuugreen;
+            }
+
+            & .centro {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
             }
         }
 
