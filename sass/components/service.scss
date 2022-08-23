@@ -69,7 +69,19 @@
     height: 80vh;
     display: flex;
     align-items: center;
+
+    &.azul {
+      background: $nuublue;
+    }
     
+    &.verde {
+      background: $nuugreen;
+    }
+
+    &.roxo {
+      background: $nuupurple;
+    }
+
   
     &-callout {
       font-size: 1.2em;

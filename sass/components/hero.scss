@@ -68,6 +68,10 @@
 
     &__link {
         display: inline-block;
+
+        &.disabled{
+            cursor: default;
+        }
     }
 
     &__icon {
@@ -148,7 +152,7 @@
 }
 
 .hero.first {
-    background-image: url(/img/espuma2.jpg);
+    background-image: url(/img/espuma3.jpg);
     background-size: cover;
     background-position: center;
 }
