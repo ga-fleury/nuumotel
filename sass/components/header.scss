@@ -28,16 +28,16 @@ header {
           cursor: pointer;
         }
         .header-inner-nav-link {
-          &:first-child {
-            margin-right: 60px;
-          }
+          // &:first-child {
+          //   margin-right: 60px;
+          // }
           display: block;
           font-size: 1.2rem;
         }
         .header-inner-nav-menu {
-          .header-inner-nav-link {
-            margin-right: 50px;
-          }
+          // .header-inner-nav-link {
+          //   margin-right: 50px;
+          // }
           display: flex;
           align-items: center;
           .header-inner-nav-menu-hamburger {
