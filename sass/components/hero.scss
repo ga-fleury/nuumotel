@@ -4,6 +4,59 @@
     margin: 0;
 }
 
+.down-arrow {
+    width: 32px;
+    height: 32px;
+    animation: bounce 1s infinite;
+    margin-top: 20px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    } 50% {
+        transform: translateY(10px);
+    } 100% {
+        transform: translateY(-10px);
+    }
+  }
+
+
+.sidebar {
+    &-wrap {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        height: 120px;
+        width: 60px;
+        background-color: white;
+        z-index: 999;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeinleft .5s 2s forwards;
+        border-radius: 0px 15px 15px 0px;
+    }
+    &-item {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        cursor: pointer;
+    }
+}
+
+@keyframes fadeinleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    } 100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+
 .logo-img.main {
     width: 300px;
 }
@@ -160,6 +213,7 @@
     background-image: url(/img/festa3.jpg);
     background-size: cover;
     background-position: right top;
+    max-height: 90vh;
 }
 
 .hero {
