@@ -67,6 +67,7 @@ function menuClose() {
 function menuOpen() {
 	gsap.to(socialMediaMenu, {x: 0, duration: .3});
 	gsap.to(chevronIcon, {rotation: -180, duration: 0});
+	console.log('this')
 	isMenuOpen = true;
 }
 
