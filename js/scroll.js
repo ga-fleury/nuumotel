@@ -18,12 +18,12 @@ const scroller = new LocomotiveScroll({
 
 scroller.on("scroll", (instance) => {
     let height = window.innerHeight;
-    // let customCursor = document.querySelector(".cursor");
-    let footer = document.querySelector(".footer");
-    let chat = document.querySelector(".chat");
     let scrollPy = instance.scroll.y + "px";
-    // customCursor.style.top = scrollPy;
+    let footer = document.querySelector(".footer");
     footer.style.transform = "translateY(" + scrollPy + ")";
-    chat.style.top = instance.scroll.y + (height*.85) + "px";
-    chat.style.opacity = 0 + (instance.scroll.y * 0.005);
+    // let customCursor = document.querySelector(".cursor");
+    // customCursor.style.top = scrollPy;
+    // let chat = document.querySelector(".chat");
+    // chat.style.top = instance.scroll.y + (height*.85) + "px";
+    // chat.style.opacity = 0 + (instance.scroll.y * 0.005);
 });
