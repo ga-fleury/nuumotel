@@ -4,14 +4,14 @@ const pageContainer = document.querySelector("[data-scroll-container]");
 
 const scroller = new LocomotiveScroll({
     el: pageContainer,
-    smooth: false,
+    smooth: true,
     mobile: {
         breakpoint: 0,
         smooth: false
     },
     tablet: {
         breakpoint: 0,
-        smooth: false
+        smooth: true
     }
 });
 
