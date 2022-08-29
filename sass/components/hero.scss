@@ -28,16 +28,18 @@
         left: 0;
         top: 20%;
         height: 120px;
-        width: 60px;
-        background-color: white;
+        width: 90px;
         z-index: 999;
-        opacity: 0;
+        opacity: 1;
+        transform: translateX(-60px);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        animation: fadeinleft .5s 2s forwards;
+        justify-content: flex-start;
+        align-items: flex-start;
+        animation: fadeinleft 1s 2s;
         border-radius: 0px 15px 15px 0px;
+    }
+    &-icon-wrap {
+        background-color: #fff;
     }
     &-item {
         height: 50px;
@@ -45,15 +47,27 @@
         margin: 5px;
         cursor: pointer;
     }
+    &-open-close {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
 }
 
 @keyframes fadeinleft {
     0% {
-        opacity: 0;
-        transform: translateX(-20px);
-    } 100% {
+        opacity: 1;
+        transform: translateX(-60px);
+    } 50% {
         opacity: 1;
         transform: translateX(0px);
+    } 75% {
+        opacity: 1;
+        transform: translateX(0px);
+    } 100% {
+        transform: translateX(-60px);
+        opacity: 1;
     }
   }
 

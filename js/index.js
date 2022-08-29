@@ -46,6 +46,30 @@ for(let i = 0; i < suiteCard.length; i++) {
 function handleMouseOver() {
 
 }
+
+const socialMediaMenuButton = document.getElementById('socialmediamenubutton');
+const chevronIcon = document.getElementById('chevronIcon');
+const socialMediaMenu = document.getElementById('socialmediamenu');
+let isMenuOpen = false;
+
+socialMediaMenuButton.addEventListener("click", menuHandle);
+
+function menuHandle() {
+	isMenuOpen ? menuClose() : menuOpen();
+}
+
+function menuClose() {
+	gsap.to(socialMediaMenu, {x: -60, duration: .3});
+	gsap.to(chevronIcon, {rotation: 0, duration: 0});
+	isMenuOpen = false;
+}
+
+function menuOpen() {
+	gsap.to(socialMediaMenu, {x: 0, duration: .3});
+	gsap.to(chevronIcon, {rotation: -180, duration: 0});
+	isMenuOpen = true;
+}
+
 // const sectionColors = ["#30cce5"]
 // const navColors =     ["#30cce5","#FCFFF6", "#90EE90", "#EE82EE", "#FF6347"]
 
