@@ -8,6 +8,7 @@
     "acorn": "^7.4.0",
     "acorn-globals": "^4.3.4",
     "acorn-walk": "^6.2.0",
+    "ajax": "^0.0.4",
     "ajv": "^6.12.5",
     "alphanum-sort": "^1.0.2",
     "ansi-regex": "^3.0.0",
